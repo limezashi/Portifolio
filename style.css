@@ -1,0 +1,80 @@
+body {
+    font-family: Arial;
+}
+.header, .perfil{
+    margin:0 auto;
+    padding: 20px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    max-width: 1200px;
+}
+.header {
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 10px;  
+    justify-content: center;
+}
+
+a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+header img {
+    max-width: 7%;
+}
+
+/*---------------------------------------------*/
+/* todos
+    margin:0 auto;
+    justify-content: space-between;
+
+/* Main */
+main {
+    background-color: #f0f0f0; /* ou qualquer cor que você quiser */
+}
+
+.perfil p {
+    line-height: 2rem;
+}
+
+.perfil h1 {
+    font-size: 5rem;
+    color: #053974;
+    text-transform: uppercase;
+    /* letter-spacing: 0.5rem; */
+}
+.perfil img{
+    height: 30rem;
+    width: 30rem;
+}
+
+.intro {
+    align-content: center;
+}
+/*------------------------------------------------------*/
+.exp{
+    margin:0 auto;
+    padding: 20px;
+    align-items: center;
+    max-width: 1200px;
+}
+.exp h2{
+    font-size: 5rem;
+    color:#cfcece;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+.experiencia-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
