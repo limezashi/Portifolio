@@ -9,16 +9,16 @@ main {
 
 }
 
-.perfil p {
-    line-height: 1.8rem;
-    font-size: 1.3rem;
-    /* text-align: justify; */
-}
-
 .perfil h1 {
     font-size: 5rem;
     color: white;
     margin-bottom: 2rem;
+}
+
+.perfil p {
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+    /* text-align: justify; */
 }
 
 .perfil img{
