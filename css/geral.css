@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    /* background: black;
+    color: white; */
+}
+body {
+    background: #141414;
+    color: white;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    /* text-transform: uppercase; */
+}
+
+.header, .perfil, .sobre, .skills{
+    margin:0 auto;
+    padding: 20px;
+    /* display: flex; */
+    gap: 100px;
+    align-items: center;
+    max-width: 1200px;
+}

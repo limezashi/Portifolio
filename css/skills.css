@@ -1,0 +1,9 @@
+.skills h2{
+    color:#09489c;
+    /* color:#003366; */
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    /* text-align: center; */
+}

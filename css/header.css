@@ -1,0 +1,22 @@
+.header {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;  
+    justify-content: center;
+}
+
+header img {
+    max-width: 7%;
+}
+
+menu a {
+    display: block;
+    padding: 10px 20px;
+}
+
