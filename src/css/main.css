@@ -1,0 +1,21 @@
+.cover {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.cover-text{
+    grid-column: 1/2;
+    align-content: center;
+} 
+
+.cover-img {
+    grid-column:  2 ;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.cover-text span {
+    color: #F500A0;
+}
