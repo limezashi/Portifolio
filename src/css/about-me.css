@@ -1,6 +1,6 @@
 .about {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
 }
 
 .about h2 {
@@ -25,12 +25,15 @@
 }
 
 .about-info {
-    display: flex;
-    justify-content: space-between;               
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    /* justify-items: center; */
+    align-items: start;
+    /* justify-content: space-between; */
     border: 1px solid #F500A0;
     border-radius: 4px;
     padding: 1rem;
-    flex-wrap: wrap;
 }
 
 .about-info h3 {
