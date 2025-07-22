@@ -1,0 +1,55 @@
+.skill{
+    background: #191919;
+    padding-bottom: 2rem;
+}
+
+.skills h2 {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.grid-skill {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    position: relative;
+}
+
+.grid-skill::before {
+  content: "";
+  position: absolute;
+  top: 50%; /* começa no meio vertical */
+  left: 50%; /* meio horizontal */
+  transform: translate(-50%, -50%); /* centraliza exatamente */
+  width: 3px; /* largura da linha */
+  height: 200px; /* altura fixa */
+  background-color: #f500a0; /* cor rosa neon */
+}
+
+.info h3 {
+    padding: 2rem;
+}
+.icons img:nth-child(odd) {
+  margin-top: 0;
+}
+
+/* Ícones pares (2, 4, 6...) mais para baixo */
+.icons img:nth-child(even) {
+  margin-top: 2rem; /* ajusta esse valor para o quanto quer que desça */
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;    /* mantém o efeito zigue-zague vertical */
+  justify-content: center;    /* centraliza os ícones horizontalmente */
+}   
+.icons img {
+    background: #141414;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.icons img:hover {
+  transform: scale(1.1);
+}

@@ -1,6 +1,7 @@
 .cover {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 3rem;
 }
 
 .cover-text{
@@ -14,6 +15,7 @@
 
 h1 {
     font-size: 3em;
+    padding-bottom: 1rem;
 }
 
 .cover-text span {

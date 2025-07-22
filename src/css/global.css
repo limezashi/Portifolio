@@ -1,7 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     background: #141414;
-    padding: 0 60px;
+    padding: 2rem 0;    
     color: #f7f7f7;
 }
 
@@ -22,4 +31,11 @@ li {
 
 p {
     line-height: 1.5;
+}
+h2  {
+    padding: 4rem 0;
+    text-transform: uppercase;
+    font-size:2em;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
