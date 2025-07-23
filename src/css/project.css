@@ -1,35 +1,94 @@
- 
- .large-card, .small-card {
-    background: #ccc;
+.project{
+  position: relative;
+}
+.project::before {
+    content: '';
+    width: 100px;
+    height: 2px;
+    background: #F500a0;
+    position: absolute;
+    top: 125px;
+    left: 80px;
+}
+.timeline {
     position: relative;
-    cursor: pointer;
+}
+
+/* Linha vertical central */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #f5009f8f;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 0 2rem;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+/* Cartões e conexão da esquerda (itens ímpares) */
+.timeline-item:nth-child(odd) {
+    left: 0;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.timeline-item:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: calc(50% - 2px);
+    height: 2px;
+    background-color: #f5009f8f;
+    transform: translateY(-50%);
+}
+
+/* Cartões e conexão da direita (itens pares) */
+.timeline-item:nth-child(even) {
+    left: 50%;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.timeline-item:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: calc(50% - 2px);
+    height: 2px;
+    background-color: #f5009f8f;
+    transform: translateY(-50%);
+}
+
+/* Estilo do cartão */
+.card {
     border-radius: 4px;
     overflow: hidden;
-    color: black;
-    display: flex;
-    align-items: flex-end;
-    padding: 10px;
-    box-sizing: border-box;
-    transition: all 0.5s ease;
-  }
-  .large-card {
-    width: 300px;
-    height: 300px;
-    grid-column: 1 / 2;
-  }
-  .small-cards {
-    display: grid;
-    grid-template-rows: repeat(3, 100px);
-    grid-gap: 10px;
-    grid-column: 2 / 3;
-  }
-  .small-card {
-    width: 150px;
-    height: 100px;
-  }
-  .label {
-    background: rgba(128, 128, 128, 0.7);
-    padding: 4px 8px;
-    font-size: 12px;
-    font-weight: 600;
-  }
+    width: 25rem;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card h3 {
+  font-size: small;
+    text-align: start;
+    padding: 1rem;
+    background-color: #2a2a2a;
+}

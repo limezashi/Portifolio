@@ -14,11 +14,11 @@
 /* CSS */
 .slide {
   flex: 0 0 auto;
-  width: 360px;
-  height: 200px;
+  width: 30rem;
+  height: 15rem;
   background: #1e1e1e;
   border-radius: 4px;
-  padding: 2rem;
+  padding: 6rem 4rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -66,8 +66,8 @@
 .slider-controls button {
   background: none;
   border: none;
-  color: white;
-  font-size: 2rem;
+  color: #f7f7f7;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 

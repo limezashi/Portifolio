@@ -3,116 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Portifólio</title>
+    <link  rel="stylesheet" href="./style.css">
+    <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <h1 class="lm">LM</h1>
-            <nav>
-                <ul class="menu">
-                    <li><a href=#perfil>Home</a></li>
-                    <li><a href=#experiencia>Experiência</a></li>
-                    <li><a href=#formação>Formação</a></li>
-                    <li><a href=#contato>Contato</a></li>
-                </ul>
-            </nav>
-    </header>
-<!-- Perfil -->
-    <main>
-        <div class="perfil">
-            <div class="perfil-info">
-                <h1>I'm Lívia Mezashi.</h1>
-                <!-- <p><strong>Desenvolvedor Júnior</strong> | Front-end & Back-end</p> -->
-                <div class="introducao">
-                    <p>Sou estudante de Ciência da Computação (6º semestre, noturno). Tenho grande disposição para o aprendizado contínuo e desenvolvimento profissional, sempre buscando ampliar minha atuação em tecnologia e contribuir de forma proativa para a equipe e a empresa.</p>
-                </div>
-            </div>
-            <img class="astro" src="./img/astronauta.png" alt="Foto Perfil">
-        </div>
-    </main>
-    <section class="skills">
-        <h2>Habilidades</h2>
-        <ul class="lista"> 
-            <li>Python</li>
-            <li>Django</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>PostgreSQL</li>
-            <li>Preset.io</li>
-            <li>GitHub</li>
-            <li>DBeaver</li>
-            <li>Docker</li>
-        </ul>
-    </section>
-<!-- Sobre -->
-    <!-- <section id="sobre" class="sobre">
-        <h2>Who Am I?</h2>
-        <div class="introducao">
-            <p>Sou estudante de Ciência da Computação (6º semestre, noturno) e desenvolvedora júnior em constante evolução. Tenho grande disposição para o aprendizado contínuo e desenvolvimento profissional, sempre buscando ampliar minha atuação em tecnologia e contribuir de forma proativa para a equipe e a empresa.</p>
-        </div>
-    </section> -->
-<!-- SKILLS -->
+    <form action="./" method="get">
+       <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nomes">
 
-<!-- Projetos -->
- <section class="projetos">
-    <h2>Projetos</h2>
-    <div>In Progress...</div>
- </section>
-<!-- Experiência -->
-    <section id="experiencia" class="experiencia">
-        <h2>Experiência</h2>
-        <div class="informacao">
-            <div class="informacao-item">
-                <span>2023-2024</span>
-                <h3 class="cargo">Estágio</h3>
-                <h3 class="empresa">Eurofile</h3>
-                <p>Responsável pela certificação documental no sistema, apoio na implantação de novo sistema, gestão da qualidade e acompanhamento de processos internos, com foco no cumprimento de prazos e organização documental.</p>
-                <ul class="habilidades">
-                    <li>Explorador de Arquivos (Windows)</li>
-                </ul>
-            </div>
-            <div class="informacao-item">
-                <span>2024</span>
-                <h3 class="cargo">Estágio</h3>
-                <h3 class="empresa">PHP Assessoria Contábil</h3>
-                <p>Atuação em tarefas administrativas com foco no setor fiscal, incluindo atendimento ao cliente e suporte em rotinas contábeis. Participação ativa em treinamentos voltados ao desenvolvimento de habilidades técnicas e comportamentais na área administrativa e fiscal.</p>
-                <ul class="habilidades">
-                    <li>NFS-e</li>
-                    <li>Sistema Módulos</li>
-                    <li>Microsoft Excel</li>
-                </ul>
-            </div>
-            <div class="informacao-item">
-                <span>2025-atual</span>
-                <h3 class="cargo">Desenvolvedor Junior</h3>
-                <h3 class="empresa">Soirtec | Opensystech</h3>
-                <p>Atuação no desenvolvimento e manutenção de sistemas utilizando Django e Python, com foco em aplicações web. Utilização de HTML, CSS e PostgreSQL para criação e integração de funcionalidades. Responsável por melhorias em sistemas existentes e desenvolvimento de dashboards e relatórios interativos por meio da ferramenta Preset.io.o</p>
-                <ul class="habilidades">
-                    <li>Python</li>
-                    <li>Django</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>PostgreSQL</li>
-                    <li>Preset.io</li>
-                    <li>GitHub</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-<!-- Formação -->
- <section id="formacao" class="formacao">
-    <h2>Formação</h2>
-        <ul class="faculdade-lista">
-          <li class="faculdade">
-            <span class="faculdade-tipo">Bacharel</span>
-            <span class="ano">2023-2026</span>
-            <h3 class="faculdade-curso">Ciência da Computação</h3>
-            <span class="faculdade-instituicao">USCS</span>
-          </li>
-<!-- Contato -->
+        <button>Send</button>
+    </form>
 </body>
 </html>

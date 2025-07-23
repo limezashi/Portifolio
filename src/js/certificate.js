@@ -1,30 +1,32 @@
-const prevButton = document.querySelector(".prev");
-const nextButton = document.querySelector(".next");
-const list = document.querySelector(".certificates");
-const slide = document.querySelector(".slide");
+document.addEventListener("DOMContentLoaded", () => {
+  const list = document.querySelector(".certificates");
+  const slides = Array.from(document.querySelectorAll(".slide"));
+  const prevButton = document.querySelector(".prev");
+  const nextButton = document.querySelector(".next");
 
-const slideWidth = slide.offsetWidth + 32; // largura + margem (ajuste se necessário)
+  const slideWidth = slides[0].offsetWidth + 32; // largura + margem
+  const visibleSlides = 1; // slides totalmente visíveis por vez
 
-function getMaxScrollLeft() {
-  return list.scrollWidth - list.clientWidth;
-}
+  let currentIndex = visibleSlides;
 
-// Próximo slide com looping contínuo para frente
-nextButton.addEventListener("click", () => {
-  if (list.scrollLeft + slideWidth >= getMaxScrollLeft() - 5) {
-    // Se chegou ao fim, volta pro início com transição
-    list.scrollTo({ left: 0, behavior: "smooth" });
-  } else {
-    list.scrollBy({ left: slideWidth, behavior: "smooth" });
+  // Posição inicial
+  list.scrollLeft = currentIndex * slideWidth;
+
+  function goToIndex(index) {
+    list.scrollTo({
+      left: index * slideWidth,
+      behavior: "smooth"
+    });
+    currentIndex = index;
   }
-});
 
-// Slide anterior com looping contínuo para trás
-prevButton.addEventListener("click", () => {
-  if (list.scrollLeft <= 0) {
-    // Se está no começo, vai pro final com transição
-    list.scrollTo({ left: getMaxScrollLeft(), behavior: "smooth" });
-  } else {
-    list.scrollBy({ left: -slideWidth, behavior: "smooth" });
-  }
+  nextButton.addEventListener("click", () => {
+    currentIndex++;
+    goToIndex(currentIndex);
+  });
+
+  prevButton.addEventListener("click", () => {
+    currentIndex--;
+    goToIndex(currentIndex);
+  });
 });

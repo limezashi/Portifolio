@@ -1,0 +1,15 @@
+.contact {
+    text-align: center;
+    position: relative;
+    margin-top: 5rem;
+}
+
+.contact::before {
+    content: '';
+    width: 100px;
+    height: 2px;
+    background: #F500a0;
+    position: absolute;
+    top: 125px;
+    left: 600px;
+}
