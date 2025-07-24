@@ -1,0 +1,19 @@
+footer {
+    padding: 2rem 3rem 1rem 3rem;
+    position: relative;
+    text-align: center;
+}
+
+.footer .menu {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.footer hr {
+  border: none;
+  border-top: 2px solid #222222;
+  margin: 2rem auto;
+  width: 80%;
+}

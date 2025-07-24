@@ -1,15 +1,75 @@
 .contact {
-    text-align: center;
     position: relative;
-    margin-top: 5rem;
+    max-width: 600px;
 }
 
 .contact::before {
-    content: '';
-    width: 100px;
-    height: 2px;
-    background: #F500a0;
-    position: absolute;
-    top: 125px;
-    left: 600px;
+  content: "";
+  position: absolute;
+  top: 110px; /* começa no meio vertical */
+  left: 50%; /* meio horizontal */
+  transform: translate(-50%, -50%); /* centraliza exatamente */
+  width: 100px; /* largura da linha */
+  height: 3px; /* altura fixa */
+  background-color: #f5009f8f; /* cor rosa neon */
+}
+
+
+.contact h2 {
+    padding: 4rem 0;
+}
+
+.contact p {
+font-size: 1.1rem;
+font-weight: medium;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 1rem;
+}
+
+form {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+text-align: center;
+}
+
+input,
+textarea {
+padding: 12px;
+background: transparent;
+border: 1px solid #333;
+color: #fff;
+font-size: 1rem;
+border-radius: 4px;
+}
+
+input::placeholder,
+textarea::placeholder {
+color: #6b6b6b;
+}
+
+button {
+padding: 12px;
+background: linear-gradient(to right, #f5009f8f, #0E2148);
+color: white;
+font-size: 1rem;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+
+.icon-contact {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    margin-bottom: 2rem;
+}
+
+.icon-contact a {
+    color: white;
 }

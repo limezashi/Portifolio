@@ -1,15 +1,7 @@
 .project{
   position: relative;
 }
-.project::before {
-    content: '';
-    width: 100px;
-    height: 2px;
-    background: #F500a0;
-    position: absolute;
-    top: 125px;
-    left: 80px;
-}
+
 .timeline {
     position: relative;
 }
@@ -18,7 +10,7 @@
 .timeline::after {
     content: '';
     position: absolute;
-    width: 2px;
+    width: 3px;
     background-color: #f5009f8f;
     top: 0;
     bottom: 0;

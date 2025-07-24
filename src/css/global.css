@@ -10,7 +10,7 @@ html {
 body {
     font-family: "Montserrat", sans-serif;
     background: #141414;
-    padding: 2rem 0;    
+    padding-top: 2rem;    
     color: #f7f7f7;
 }
 
@@ -26,13 +26,13 @@ li {
 .container {
     max-width: 1220px;
     margin: 0 auto;
-    padding: 20px 40px;
 }
 
 p {
     line-height: 1.5;
 }
 h2  {
+    text-align: center;
     padding: 4rem 0;
     text-transform: uppercase;
     font-size:2em;

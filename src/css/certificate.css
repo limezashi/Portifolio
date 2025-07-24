@@ -3,13 +3,14 @@
 }
 
 .certificate::before{
-    content: '';
-    width: 150px;
-    height: 2px;
-    background: #F500a0;
-    position: absolute;
-    top: 125px;
-    left: 90px;
+  content: "";
+  position: absolute;
+  top: 110px; /* começa no meio vertical */
+  left: 50%; /* meio horizontal */
+  transform: translate(-50%, -50%); /* centraliza exatamente */
+  width: 150px; /* largura da linha */
+  height: 3px; /* altura fixa */
+  background-color: #f5009f8f; /* cor rosa neon */
 }
 /* CSS */
 .slide {

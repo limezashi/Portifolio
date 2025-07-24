@@ -4,7 +4,6 @@
 }
 
 .skills h2 {
-    text-align: center;
     padding: 2rem 0;
 }
 
@@ -23,7 +22,7 @@
   transform: translate(-50%, -50%); /* centraliza exatamente */
   width: 3px; /* largura da linha */
   height: 200px; /* altura fixa */
-  background-color: #f500a0; /* cor rosa neon */
+  background-color: #f5009f8f; /* cor rosa neon */
 }
 
 .info h3 {

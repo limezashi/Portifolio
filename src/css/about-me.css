@@ -11,13 +11,14 @@
 }
 
 .about::before {
-    content: '';
-    width: 100px;
-    height: 2px;
-    background: #F500a0;
-    position: absolute;
-    top: 125px;
-    left: 80px;
+  content: "";
+  position: absolute;
+  top: 110px; /* começa no meio vertical */
+  left: 50%; /* meio horizontal */
+  transform: translate(-50%, -50%); /* centraliza exatamente */
+  width: 100px; /* largura da linha */
+  height: 3px; /* altura fixa */
+  background-color: #f5009f8f; /* cor rosa neon */
 }
 .about-text {
     grid-column: 1 / 2;
@@ -30,7 +31,7 @@
 
 .btn {
     display: inline-block;
-    background:linear-gradient(to bottom, #940C65, #F500A0);
+    background:linear-gradient(to bottom, #7a0652, #f500a0);
     margin-top: 1rem;
     padding: 0.5rem 2.5rem;
     border-radius: 4px;
@@ -43,7 +44,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: start;
-    border: 1px solid #F500A0;
+    border: 1px solid #f5009f8f;
     border-radius: 4px;
     padding: 2rem;
 }
